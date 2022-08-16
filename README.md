@@ -358,7 +358,7 @@ Let's see how `shoal` covers these requirements in comparison to popular solutio
 
 These are the personal requirements of the author of `shoal` who not surprisingly belongs to the tribe of people preferring `XML` to `JSON`. As you can see the closest contenders are the `INI` format that doesn't match the important functional requirement, and `XML` which is too verbose and feels like an overkill for simple config files.  
 
-In other words, `shoal` aims to be an `INI` replacement with nesting structures support. Like `INI` it's intended solely for software configuration, `shoal` is implementation-dependent and its specification is too vague to be used as a general data exchange format reliably.
+In other words, `shoal` aims to be an `INI` replacement with nesting structures support. Like `INI` it's intended solely for software configuration, `shoal` is implementation-dependent and its [specification](/specification) is too vague to be used as a general data exchange format reliably.
 
 <!-- panels:end -->
 
