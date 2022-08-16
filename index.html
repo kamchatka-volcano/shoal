@@ -40,6 +40,7 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <script>
       window.$docsify = {
           name: 'shoal',
@@ -93,7 +94,10 @@
                   toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)',
                   docsify_logo_url: 'url(/_media/shoal.png)'
               }
-          }
+          },
+        plugins: [
+          EditOnGithubPlugin.create('https://github.com/kamchatka-volcano/shoal/blob/master/', null, null)
+        ]
       }
   </script>
   <!-- Docsify v4 -->
