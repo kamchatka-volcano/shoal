@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+      title="docsify-darklight-theme"
+      type="text/css"
+  />
+  <style>
+    @media (prefers-color-scheme: light) {
+        .app-name-link img {
+            content: var(--docsify_logo_url,url('/_media/shoal.png'));
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .app-name-link img {
+            content: var(--docsify_logo_url,url('/_media/shoal_dark.png'));
+        }
+    }
+  </style>
+  <style>
+    :root {
+      --docsifytabs-border-px             : 0;
+      --docsifytabs-tab-highlight-color: var(--codeBackgroundColor);
+      --docsifytabs-margin                : 0;
+      --docsifytabs-tab-padding           : 0 1.5em ;
+      --docsifytabs-content-padding       : 0;
+      --docsifytabs-tab-background: var(--blockQuoteColor);
+      --docsifytabs-tab-background--active: var(--codeBackgroundColor);
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+      window.$docsify = {
+          name: 'shoal',
+          nameLink: '/',
+          repo: '',
+          logo: '/_media/shoal.png',
+          loadSidebar: true,
+          auto2top: true,
+          //subMaxLevel: 2,
+          tabs: {
+              persist    : true,      // default
+              sync       : false,      // default
+              theme      : 'classic', // default
+              tabComments: true,      // default
+              tabHeadings: true       // default
+          },
+          darklightTheme: {
+              siteFont : "Source Sans Pro,Helvetica Neue,Arial,sans-serif",
+              defaultTheme : 'light',
+              codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
+              bodyFontSize : '17px',
+              dark: {
+                  accent: '#54F2F2',
+                  toogleBackground : '#ffffff',
+                  background: '#2D496A',
+                  textColor: '#F4FAFA',
+                  codeTextColor : '#ffffff',
+                  codeBackgroundColor : '#2C5878',
+                  borderColor : '#0d2538',
+                  blockQuoteColor : '#214259',
+                  highlightColor : '#54F2F2',
+                  sidebarSublink : '#F4FAFA',
+                  codeTypeColor : '#ffffff',
+                  coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                  toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)',
+                  docsify_logo_url: 'url(/_media/shoal_dark.png)'
+              },
+              light: {
+                  accent: '#2D8CBF',
+                  toogleBackground : '#2C5878',
+                  background: '#F4FAFA',
+                  textColor: '#34495e',
+                  codeTextColor : '#525252',
+                  codeBackgroundColor : '#E3F2F2',
+                  borderColor : 'rgba(0, 0, 0, 0.07)',
+                  blockQuoteColor : '#C7E5E5',
+                  highlightColor : '#2D8CBF',
+                  sidebarSublink : '#34495e',
+                  codeTypeColor : '#091a28',
+                  coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+                  toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)',
+                  docsify_logo_url: 'url(/_media/shoal.png)'
+              }
+          }
+      }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  <!-- docsify-example-panels (latest) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
+  <script
+      src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+      type="text/javascript">
+  </script>
+</body>
+</html>
