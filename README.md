@@ -47,7 +47,7 @@ To represent levels of this tree `shoal` uses opening and closing tokens similar
   "photos" : {
       "root_dir" : "~/Photos",
       "videos" : {
-          "root_dir" : "~/Videos"    
+          "root_dir" : "~/Videos"
       }
   }
 }
@@ -63,8 +63,8 @@ photos:
 ```toml
 [photos]
   root_dir = "~/Photos"
-    [photos.videos]
-      root_dir = "~/Videos"
+  [photos.videos]
+    root_dir = "~/Videos"
 ```
 <!-- tabs:end -->
 <!-- panels:end -->
@@ -133,12 +133,12 @@ Simple configs can be written with only `-` or `---` closing tokens. In multilev
       length = 4       
     -
     #user-lock-policy:
-      attempts = 0                                   
+      attempts = 0
       password_expiry_days = 0
-  --security    
+  --security
   #host:
     address=127.0.0.1
-    port = 8080                               
+    port = 8080
 ```
 <!-- div:right-panel -->
 <!-- tabs:start -->
@@ -148,19 +148,19 @@ Simple configs can be written with only `-` or `---` closing tokens. In multilev
   "photo_server":{
     "security":{
       "password_strength": 8,
-      "password_policy":{     
-        "length" : 4       
+      "password_policy":{
+        "length" : 4
       },
       "user-lock-policy":{
-        "attempts": 0,                                   
+        "attempts": 0,
         "password_expiry_days": 0
       }
-    },  
+    },
     "host":{
       "address":"127.0.0.1",
       "port": 8080 
     }
-  }                              
+  }
 }
 ```
 #### **YAML**
@@ -168,30 +168,30 @@ Simple configs can be written with only `-` or `---` closing tokens. In multilev
 photo_server:
   security:
     password_strength : 8
-    password_policy:     
-      length : 4       
-    
+    password_policy:
+      length : 4
+      
     user-lock-policy:
-      attempts: 0                                   
-      password_expiry_days: 0        
+      attempts: 0
+      password_expiry_days: 0
   host:
     address: 127.0.0.1
-    port: 8080                              
+    port: 8080
 ```
 #### **TOML**
 ```toml
 [photo_server]
   [photo_server.security]
     password_strength = 8
-    [photo_server.security.password_policy]     
-      length = 4       
+    [photo_server.security.password_policy]
+      length = 4
     
     [photo_server.security.user-lock-policy]
-      attempts = 0                                   
-      password_expiry_days = 0        
+      attempts = 0
+      password_expiry_days = 0
   [photo_server.host]
     address = "127.0.0.1"
-    port = 8080                              
+    port = 8080
 ```
 <!-- tabs:end -->
 <!-- panels:end -->
@@ -211,12 +211,12 @@ If possible it's better to minimize the usage of different closing tokens to kee
   -  
   #security:
     password_strength = 8
-    #password_policy:     
-      length = 4       
+    #password_policy:
+      length = 4
     -
     #user-lock-policy:
-      attempts = 0                                   
-      password-expiry-days = 0                                       
+      attempts = 0
+      password-expiry-days = 0
 ```
 <!-- div:right-panel -->
 <!-- tabs:start -->
@@ -230,11 +230,11 @@ If possible it's better to minimize the usage of different closing tokens to kee
     },
     "security":{
       "password_strength": 8,
-      "password_policy":{     
-        "length" : 4       
+      "password_policy":{
+        "length" : 4
       },
       "user-lock-policy":{
-        "attempts": 0,                                   
+        "attempts": 0,
         "password_expiry_days": 0
       }
     }
@@ -246,15 +246,15 @@ If possible it's better to minimize the usage of different closing tokens to kee
 photo_server:
   host:
     address: 127.0.0.1
-    port: 8080   
+    port: 8080
   security:
     password_strength : 8
-    password_policy:     
-      length : 4       
-    
+    password_policy:
+      length : 4
+      
     user-lock-policy:
-      attempts: 0                                   
-      password_expiry_days: 0                                   
+      attempts: 0
+      password_expiry_days: 0
 ```
 #### **TOML**
 ```toml
@@ -264,12 +264,12 @@ photo_server:
     port = 8080
   [photo_server.security]
     password_strength = 8
-    [photo_server.security.password_policy]     
-      length = 4       
+    [photo_server.security.password_policy]
+      length = 4
     
     [photo_server.security.user-lock-policy]
-      attempts = 0                                   
-      password_expiry_days = 0                                  
+      attempts = 0
+      password_expiry_days = 0
 ```
 <!-- tabs:end -->
 <!-- panels:end -->
