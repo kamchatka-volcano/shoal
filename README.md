@@ -7,14 +7,14 @@
 ```shoal
 ;shoal supports comments,
 
-root_dir = ~/Photos                ; parameters, 
-supported_files = [*.jpg, *.png]   ; arrays,            
-#thumbnails:                       ; structures,
+root_dir = ~/Photos              ;parameters, 
+supported_files = [*.jpg, *.png] ;arrays,            
+#thumbnails:                     ;structures,
   enabled = true
   max_width = 128
   max_height = 128
 ---                    
-#shared_albums:                     ; and arrays of structures
+#shared_albums:                  ;and arrays of structures
 ###
   dir   = summer_2019
   title = "Summer (2019)"  
